@@ -2,10 +2,11 @@
 
 namespace Database\Factories;
 
-use App\Models\Reaction;
+// use App\Models\Reaction;
 use App\Models\Topic;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Qirolab\Laravel\Reactions\Models\Reaction;
 
 class ReactionFactory extends Factory
 {

@@ -3,10 +3,10 @@
 namespace Database\Seeders;
 
 use App\Models\Activity;
-use App\Models\Reply;
 use Illuminate\Database\Seeder;
+use Qirolab\Laravel\Reactions\Models\Reaction;
 
-class ReplySeeder extends Seeder
+class ReactionSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,7 +16,7 @@ class ReplySeeder extends Seeder
     public function run()
     {
         Activity::unsetEventDispatcher();
-        Reply::factory(50)->create();
+        Reaction::factory(10)->create();
         Activity::setEventDispatcher(app('events'));
     }
 }
